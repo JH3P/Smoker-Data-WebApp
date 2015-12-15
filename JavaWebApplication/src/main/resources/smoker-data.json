@@ -1,0 +1,591 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "rc67-ecu8",
+      "name" : "Smoking Prevalence in Adults, 1984-2013",
+      "attribution" : "California Tobacco Control Program",
+      "attributionLink" : "http://www.cdph.ca.gov/programs/tobacco/Pages/default.aspx",
+      "averageRating" : 0,
+      "category" : "Diseases and Conditions",
+      "createdAt" : 1407173742,
+      "description" : "Adult smoking prevalence in California, males and females aged 18+, starting in 1984. Caution must be used when comparing the percentages of smokers over time as the definition of ‘current smoker’ was broadened in 1996, and the survey methods were changed in 2012. Current cigarette smoking is defined as having smoked at least 100 cigarettes in lifetime and now smoking every day or some days. Prior to 1996, the definition of current cigarettes smoking was having smoked at least 100 cigarettes in lifetime and smoking now. Due to the methodology change in 2012, the Centers for Disease Control and Prevention (CDC) recommend not conducting analyses where estimates from 1984 – 2011 are compared with analyses using the new methodology, beginning in 2012. This includes analyses examining trends and changes over time. (For more information, please see the narrative description.)",
+      "displayType" : "table",
+      "downloadCount" : 461,
+      "iconUrl" : "fileId:Nwx1CmCpgLDDmZhAXkViow8vEicgTIZGxC7n0fbDwDE",
+      "indexUpdatedAt" : 1432914153,
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 8701805,
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1408642948,
+      "publicationGroup" : 1671970,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1408642117,
+      "rowsUpdatedBy" : "jrtt-zagq",
+      "tableId" : 1691994,
+      "totalTimesRated" : 0,
+      "viewCount" : 885,
+      "viewLastModified" : 1432913906,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { }
+      }, {
+        "id" : 163284544,
+        "name" : "Year",
+        "dataTypeName" : "text",
+        "fieldName" : "year",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 21196648,
+        "width" : 148,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "1984",
+          "null" : 0,
+          "largest" : "2013",
+          "top" : [ {
+            "count" : 20,
+            "item" : "1984"
+          }, {
+            "count" : 19,
+            "item" : "1985"
+          }, {
+            "count" : 18,
+            "item" : "1986"
+          }, {
+            "count" : 17,
+            "item" : "1987"
+          }, {
+            "count" : 16,
+            "item" : "1988"
+          }, {
+            "count" : 15,
+            "item" : "1989"
+          }, {
+            "count" : 14,
+            "item" : "1990"
+          }, {
+            "count" : 13,
+            "item" : "1991"
+          }, {
+            "count" : 12,
+            "item" : "1992"
+          }, {
+            "count" : 11,
+            "item" : "1993"
+          }, {
+            "count" : 10,
+            "item" : "1994"
+          }, {
+            "count" : 9,
+            "item" : "1995"
+          }, {
+            "count" : 8,
+            "item" : "1996"
+          }, {
+            "count" : 7,
+            "item" : "1997"
+          }, {
+            "count" : 6,
+            "item" : "1998"
+          }, {
+            "count" : 5,
+            "item" : "1999"
+          }, {
+            "count" : 4,
+            "item" : "2000"
+          }, {
+            "count" : 3,
+            "item" : "2001"
+          }, {
+            "count" : 2,
+            "item" : "2002"
+          }, {
+            "count" : 1,
+            "item" : "2003"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 163284545,
+        "name" : "Comparison time period",
+        "dataTypeName" : "text",
+        "description" : "Since these changes affect the percentages, use caution comparing between groups.",
+        "fieldName" : "note",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 21486677,
+        "width" : 312,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "Definition of smoker expanded in 1996",
+          "null" : 0,
+          "largest" : "Survey methods changed in 2012",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Definition of smoker expanded in 1996"
+          }, {
+            "count" : 19,
+            "item" : "Survey methods changed in 2012"
+          }, {
+            "count" : 18,
+            "item" : "New survey methods"
+          } ]
+        },
+        "format" : {
+          "align" : "left"
+        }
+      }, {
+        "id" : 163284546,
+        "name" : "Gender",
+        "dataTypeName" : "text",
+        "fieldName" : "gender",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 21196653,
+        "width" : 172,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "Female",
+          "null" : 0,
+          "largest" : "Total",
+          "top" : [ {
+            "count" : 20,
+            "item" : "Male"
+          }, {
+            "count" : 19,
+            "item" : "Female"
+          }, {
+            "count" : 18,
+            "item" : "Total"
+          } ]
+        },
+        "format" : { }
+      }, {
+        "id" : 163284547,
+        "name" : "Percentage of  Current Smokers",
+        "dataTypeName" : "percent",
+        "description" : "Direct comparisons should only be made within the Comparison Time Period categories.",
+        "fieldName" : "percentage_of_current_smokers",
+        "position" : 4,
+        "renderTypeName" : "percent",
+        "tableColumnId" : 21196649,
+        "width" : 255,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "8.5",
+          "sum" : "1551.1",
+          "null" : 0,
+          "average" : "17.23444444444444",
+          "largest" : "28.2",
+          "top" : [ {
+            "count" : 20,
+            "item" : "21.1"
+          }, {
+            "count" : 19,
+            "item" : "15.8"
+          }, {
+            "count" : 18,
+            "item" : "11.1"
+          }, {
+            "count" : 17,
+            "item" : "13.3"
+          }, {
+            "count" : 16,
+            "item" : "12"
+          }, {
+            "count" : 15,
+            "item" : "12.7"
+          }, {
+            "count" : 14,
+            "item" : "11.7"
+          } ]
+        },
+        "format" : {
+          "view" : "percent_bar_and_text",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      }, {
+        "id" : 163284548,
+        "name" : "Lower 95% Confidence Interval",
+        "dataTypeName" : "percent",
+        "fieldName" : "lower_95_confidence_interval",
+        "position" : 5,
+        "renderTypeName" : "percent",
+        "tableColumnId" : 21196650,
+        "width" : 176,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "7.7",
+          "sum" : "1430.7",
+          "null" : 0,
+          "average" : "15.89666666666667",
+          "largest" : "24.6",
+          "top" : [ {
+            "count" : 20,
+            "item" : "13.8"
+          }, {
+            "count" : 19,
+            "item" : "13.4"
+          }, {
+            "count" : 18,
+            "item" : "10"
+          }, {
+            "count" : 17,
+            "item" : "19.5"
+          }, {
+            "count" : 16,
+            "item" : "16.6"
+          }, {
+            "count" : 15,
+            "item" : "12.6"
+          }, {
+            "count" : 14,
+            "item" : "12.2"
+          }, {
+            "count" : 13,
+            "item" : "11.1"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "right",
+          "noCommas" : "false"
+        }
+      }, {
+        "id" : 163284549,
+        "name" : "Upper 95% Confidence Interval",
+        "dataTypeName" : "percent",
+        "fieldName" : "upper_95_confidence_interval",
+        "position" : 6,
+        "renderTypeName" : "percent",
+        "tableColumnId" : 21196651,
+        "width" : 230,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "9.2",
+          "sum" : "1675.9",
+          "null" : 0,
+          "average" : "18.62111111111111",
+          "largest" : "31.8",
+          "top" : [ {
+            "count" : 20,
+            "item" : "22"
+          }, {
+            "count" : 19,
+            "item" : "9.8"
+          }, {
+            "count" : 18,
+            "item" : "13.8"
+          }, {
+            "count" : 17,
+            "item" : "13.6"
+          }, {
+            "count" : 16,
+            "item" : "12.6"
+          }, {
+            "count" : 15,
+            "item" : "12.5"
+          }, {
+            "count" : 14,
+            "item" : "13.3"
+          }, {
+            "count" : 13,
+            "item" : "12.4"
+          } ]
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "align" : "right",
+          "noCommas" : "false"
+        }
+      }, {
+        "id" : 163284550,
+        "name" : "Number of Respondents",
+        "dataTypeName" : "number",
+        "fieldName" : "number_of_respondents",
+        "position" : 7,
+        "renderTypeName" : "number",
+        "tableColumnId" : 21196652,
+        "width" : 163,
+        "cachedContents" : {
+          "non_null" : 90,
+          "smallest" : "449",
+          "sum" : "489242",
+          "null" : 0,
+          "average" : "5436.022222222222",
+          "largest" : "17486",
+          "top" : [ {
+            "count" : 20,
+            "item" : "10316"
+          }, {
+            "count" : 19,
+            "item" : "12605"
+          }, {
+            "count" : 18,
+            "item" : "17034"
+          }, {
+            "count" : 17,
+            "item" : "16472"
+          }, {
+            "count" : 16,
+            "item" : "17023"
+          }, {
+            "count" : 15,
+            "item" : "17486"
+          }, {
+            "count" : 14,
+            "item" : "14024"
+          }, {
+            "count" : 13,
+            "item" : "10206"
+          } ]
+        },
+        "format" : { }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Dataset Summary" : {
+            "Data Dictionary" : "See Attachments.",
+            "Publisher" : "California Department of Public Health",
+            "Limitations to Use (Rights)" : "Current cigarette smoking was defined as having smoked at least 100 cigarettes in lifetime and now smoking every day or some days. Prior to 1996, the definition of current cigarettes smoking was having smoked at least 100 cigarettes in lifetime and smoking now. Due to the methodology change in 2012, the Centers for Disease Control and Prevention (CDC) recommend not conducting analyses where estimates from 1984 – 2011 are compared with analyses using the new methodology, beginning in 2012. This includes analyses examining trends and changes over time. (For more information, please see the narrative description.) Use of this data is subject to the CHHS Terms of Use and any copyright and proprietary notices incorporated in or accompanying the individual files.",
+            "Posting Frequency" : "Annually",
+            "De-Identification Method" : "N/A",
+            "Spatial Coverage" : "California",
+            "Source(s) (if applicable)" : "http://www.cdc.gov/brfss/",
+            "Temporal Coverage" : "1984-2013",
+            "Contact Point" : "For program-related questions: OpenData@cdph.ca.gov; For media inquiries, contact CDPHPressOPA@cdph.ca.gov",
+            "Language" : "English (EN)",
+            "Citation" : "California Behavioral Risk Factor Surveillance System, California Tobacco Control Program, California Department of Public Health 2014. Adult-Smoking-Prevalence-1984-2013-CA-CDPH.csv",
+            "Geographic Granularity" : "State"
+          },
+          "Narrative Information" : {
+            "Description" : "The California Behavioral Risk Factor Surveillance System (BRFSS) is an on-going telephone survey of randomly selected adults, which collects information on a wide variety of health-related behaviors and preventive health practices related to the leading causes of death and disability such as cardiovascular disease, cancer, diabetes and injuries. Data are collected monthly from a random sample of the California population aged 18 years and older. The survey has been conducted since 1984 by the California Department of Public Health in collaboration with the Centers for Disease Control and Prevention (CDC). In 2012, the survey methodology of the California BRFSS changed significantly so that the survey would be more representative of the general population. Several changes were implemented: 1) the survey became dual-frame, with both cell and landline random-digit dial components, 2) residents of college housing were eligible to complete the BRFS, and 3) raking or iterative proportional fitting was used to calculate the survey weights. Due to these changes, estimates from 1984 – 2011 are not comparable to estimates from 2012 and beyond. Center for Disease Control and Policy (CDC) and recommend not conducting analyses where estimates from 1984 – 2011 are compared with analyses using the new methodology, beginning in 2012. This includes analyses examining trends and changes over time.Current cigarette smoking was defined as having smoked at least 100 cigarettes in lifetime and now smoking every day or some days. Prior to 1996, the definition of current cigarettes smoking was having smoked at least 100 cigarettes in lifetime and smoking now. ",
+            "Data Collection Tool" : "CA BRFSS tobacco track questionnaire: "
+          }
+        },
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "jsonQuery" : {
+          "order" : [ {
+            "ascending" : true,
+            "columnFieldName" : "year"
+          } ]
+        },
+        "rdfSubject" : "0",
+        "attachments" : [ {
+          "assetId" : "E58VTFDoVztz5nxaaZ4nJ_mjSYDkAFx16pf0eeQiZew",
+          "blobId" : "",
+          "name" : "2013 BRFSS Documentation.pdf",
+          "filename" : "2013 BRFSS Documentation.pdf"
+        }, {
+          "assetId" : "pALV28t02zdOwfyZext0T62G5Ix7m_c2v4tPJTgN2L8",
+          "blobId" : "",
+          "name" : "Smoking Prevalence in Adults, 1984-2013-DD.xlsx",
+          "filename" : "Smoking Prevalence in Adults, 1984-2013-DD.xlsx"
+        } ],
+        "rowIdentifier" : "0",
+        "rdfClass" : ""
+      },
+      "owner" : {
+        "id" : "vbyz-nik3",
+        "displayName" : "CDPH-California Tobacco Control Program",
+        "roleName" : "viewer",
+        "screenName" : "CDPH-California Tobacco Control Program",
+        "rights" : [ "view_others_datasets", "view_goals", "view_dashboards" ]
+      },
+      "query" : {
+        "orderBys" : [ {
+          "ascending" : true,
+          "expression" : {
+            "columnId" : 163284544,
+            "type" : "column"
+          }
+        } ]
+      },
+      "rights" : [ "read" ],
+      "sortBys" : [ {
+        "id" : 0,
+        "viewColumnId" : 163284544,
+        "flags" : [ "asc" ]
+      } ],
+      "tableAuthor" : {
+        "id" : "vbyz-nik3",
+        "displayName" : "CDPH-California Tobacco Control Program",
+        "roleName" : "viewer",
+        "screenName" : "CDPH-California Tobacco Control Program",
+        "rights" : [ "view_others_datasets", "view_goals", "view_dashboards" ]
+      },
+      "tags" : [ "cigarettes", "smoking", "tobacco", "adult", "let's get healthy california", "lghc" ],
+      "flags" : [ "default" ]
+    }
+  },
+  "data" : [ [ 61, "BA485557-89F1-4EC9-B58D-EA050F2738D0", 61, 1407173745, "890415", 1408403341, "890415", null, "1984", "Definition of smoker expanded in 1996", "Total", "24.9", "22.3", "27.5", "1082" ]
+  , [ 31, "D9430EB9-5F93-4D34-83B2-6E8C8B263ED5", 31, 1407173745, "890415", 1408403336, "890415", null, "1984", "Definition of smoker expanded in 1996", "Female", "23", "19.7", "26.3", "633" ]
+  , [ 1, "9EB07D06-DB81-4C62-8C84-83228C43B086", 1, 1407173745, "890415", 1408403333, "890415", null, "1984", "Definition of smoker expanded in 1996", "Male", "26.9", "22.8", "31", "449" ]
+  , [ 32, "5EEC37F6-0E90-48F8-92A3-7810A48DBEA7", 32, 1407173745, "890415", 1408403325, "890415", null, "1985", "Definition of smoker expanded in 1996", "Female", "25.2", "22.1", "28.2", "773" ]
+  , [ 62, "02EFD7BB-D113-4085-B4CB-0D5B617341F7", 62, 1407173745, "890415", 1408403330, "890415", null, "1985", "Definition of smoker expanded in 1996", "Total", "26.7", "24.3", "29", "1366" ]
+  , [ 2, "D38A28DC-C91B-461B-9818-8D905AA913CC", 2, 1407173745, "890415", 1408403327, "890415", null, "1985", "Definition of smoker expanded in 1996", "Male", "28.2", "24.6", "31.8", "593" ]
+  , [ 33, "95DF7111-DF83-4B09-A173-0245966A68A9", 33, 1407173745, "890415", 1408403319, "890415", null, "1986", "Definition of smoker expanded in 1996", "Female", "23.3", "20.5", "26", "910" ]
+  , [ 3, "5C89EE48-87F5-4AC6-BE48-BDCC438B2F74", 3, 1407173745, "890415", 1408403322, "890415", null, "1986", "Definition of smoker expanded in 1996", "Male", "28", "24.6", "31.4", "657" ]
+  , [ 63, "E5F2917A-6849-47C0-AAC3-EDA837EDB8D9", 63, 1407173745, "890415", 1408403315, "890415", null, "1986", "Definition of smoker expanded in 1996", "Total", "25.6", "23.4", "27.8", "1567" ]
+  , [ 34, "00E2543D-0364-4A56-8C17-3ADA33C08ED4", 34, 1407173745, "890415", 1408403307, "890415", null, "1987", "Definition of smoker expanded in 1996", "Female", "20.1", "17.7", "22.6", "1020" ]
+  , [ 4, "41DAB638-1D78-4F29-B8A2-81E849131671", 4, 1407173745, "890415", 1408403312, "890415", null, "1987", "Definition of smoker expanded in 1996", "Male", "22.8", "19.8", "25.8", "755" ]
+  , [ 64, "9DBC813A-6748-4D0F-9EB8-6F297025BF5E", 64, 1407173745, "890415", 1408403304, "890415", null, "1987", "Definition of smoker expanded in 1996", "Total", "21.4", "19.5", "23.4", "1775" ]
+  , [ 65, "FBC8D47F-83FD-4BF2-BE70-3DCEA6FB8716", 65, 1407173745, "890415", 1408403298, "890415", null, "1988", "Definition of smoker expanded in 1996", "Total", "22.7", "21", "24.3", "2454" ]
+  , [ 35, "E633699A-447A-4C08-94C4-3ADDC874A6B1", 35, 1407173745, "890415", 1408403301, "890415", null, "1988", "Definition of smoker expanded in 1996", "Female", "19.9", "17.8", "22", "1381" ]
+  , [ 5, "C456CC1F-520B-49FD-AD20-E2BA86C1A544", 5, 1407173745, "890415", 1408403294, "890415", null, "1988", "Definition of smoker expanded in 1996", "Male", "25.6", "22.9", "28.2", "1073" ]
+  , [ 6, "BD71E7D3-6205-4D53-B05F-105D3238E165", 6, 1407173745, "890415", 1408403286, "890415", null, "1989", "Definition of smoker expanded in 1996", "Male", "22.5", "20", "25", "1088" ]
+  , [ 66, "0D26BBE2-EE6B-479D-B3C2-16CF0818C8FA", 66, 1407173745, "890415", 1408403289, "890415", null, "1989", "Definition of smoker expanded in 1996", "Total", "21.1", "19.5", "22.8", "2388" ]
+  , [ 36, "BFE71255-2863-4384-9C48-6DB961344083", 36, 1407173745, "890415", 1408403282, "890415", null, "1989", "Definition of smoker expanded in 1996", "Female", "19.8", "17.7", "22", "1300" ]
+  , [ 37, "DBA61546-553E-4B49-AE7C-44E78ABE2F12", 37, 1407173745, "890415", 1408403216, "890415", null, "1990", "Definition of smoker expanded in 1996", "Female", "17.9", "15.9", "19.8", "1443" ]
+  , [ 67, "E9971F8A-9580-482B-AC94-1F29C79E25DE", 67, 1407173745, "890415", 1408403219, "890415", null, "1990", "Definition of smoker expanded in 1996", "Total", "19.4", "17.9", "20.9", "2691" ]
+  , [ 7, "6B4552BA-5B83-4FA8-9819-9BDDE9A52CB8", 7, 1407173745, "890415", 1408403210, "890415", null, "1990", "Definition of smoker expanded in 1996", "Male", "21.1", "18.8", "23.3", "1248" ]
+  , [ 68, "6C51C2F8-F7DB-4D1E-A53E-E287CD29644F", 68, 1407173745, "890415", 1408403208, "890415", null, "1991", "Definition of smoker expanded in 1996", "Total", "19.2", "17.8", "20.6", "2992" ]
+  , [ 38, "44178AD7-383D-455C-8B85-1BC8BDA26F03", 38, 1407173745, "890415", 1408403204, "890415", null, "1991", "Definition of smoker expanded in 1996", "Female", "15.8", "14", "17.6", "1616" ]
+  , [ 8, "B42B7E3D-2CCB-4C97-BEFA-394D58862F4E", 8, 1407173745, "890415", 1408403200, "890415", null, "1991", "Definition of smoker expanded in 1996", "Male", "22.7", "20.5", "25", "1376" ]
+  , [ 69, "39EF4D34-600B-42DE-816A-3526FD24155B", 69, 1407173745, "890415", 1408403195, "890415", null, "1992", "Definition of smoker expanded in 1996", "Total", "20", "18.8", "21.3", "3969" ]
+  , [ 9, "FD811A2F-D1C0-4625-BA43-677C1EA83809", 9, 1407173745, "890415", 1408403192, "890415", null, "1992", "Definition of smoker expanded in 1996", "Male", "22.3", "20.4", "24.2", "1799" ]
+  , [ 39, "BD446971-182F-47D5-80E4-7016B337FC3A", 39, 1407173745, "890415", 1408403198, "890415", null, "1992", "Definition of smoker expanded in 1996", "Female", "17.8", "16.2", "19.4", "2170" ]
+  , [ 10, "F3CB81A2-E97C-4B30-A334-6809B5263860", 10, 1407173745, "890415", 1408403190, "890415", null, "1993", "Definition of smoker expanded in 1996", "Male", "20.7", "19.3", "22.1", "3277" ]
+  , [ 40, "BE800B90-0406-49C9-82FE-DA5DE43E3677", 40, 1407173745, "890415", 1408403182, "890415", null, "1993", "Definition of smoker expanded in 1996", "Female", "15.8", "14.6", "16.9", "4069" ]
+  , [ 70, "7C78646A-9877-4844-949A-A877CA8AE28D", 70, 1407173745, "890415", 1408403185, "890415", null, "1993", "Definition of smoker expanded in 1996", "Total", "18.2", "17.3", "19.1", "7346" ]
+  , [ 41, "7F5E11D4-E516-44A1-B2D8-40B9AFA5F8D8", 41, 1407173745, "890415", 1408403179, "890415", null, "1994", "Definition of smoker expanded in 1996", "Female", "14.4", "13.4", "15.4", "4511" ]
+  , [ 11, "5C277587-AD32-4646-9BB6-DC3A41D93620", 11, 1407173745, "890415", 1408403173, "890415", null, "1994", "Definition of smoker expanded in 1996", "Male", "18.9", "17.6", "20.1", "3632" ]
+  , [ 71, "6B32317E-6A63-453E-A3F2-521B63892F68", 71, 1407173745, "890415", 1408403176, "890415", null, "1994", "Definition of smoker expanded in 1996", "Total", "16.6", "15.8", "17.4", "8143" ]
+  , [ 42, "BA8CCF3B-DE10-40A3-B45F-55223C0D7A6A", 42, 1407173745, "890415", 1408403171, "890415", null, "1995", "Definition of smoker expanded in 1996", "Female", "13.2", "12.2", "14.2", "4524" ]
+  , [ 72, "6C1C3638-E5F3-45EF-96F2-4EE4911F428D", 72, 1407173745, "890415", 1408403165, "890415", null, "1995", "Definition of smoker expanded in 1996", "Total", "15.9", "15.1", "16.7", "8176" ]
+  , [ 12, "EF287DA1-7767-49AA-9BE6-393DBAEBE544", 12, 1407173745, "890415", 1408403168, "890415", null, "1995", "Definition of smoker expanded in 1996", "Male", "18.7", "17.4", "19.9", "3652" ]
+  , [ 73, "23E20670-9532-41F6-AAD3-11D72F71BC2D", 73, 1407173745, "890415", 1408403141, "890415", null, "1996", "Survey methods changed in 2012", "Total", "17.8", "16.9", "18.6", "8141" ]
+  , [ 43, "68913EC9-05C8-4D87-9820-12DD16F08956", 43, 1407173745, "890415", 1408403147, "890415", null, "1996", "Survey methods changed in 2012", "Female", "14.8", "13.8", "15.8", "4656" ]
+  , [ 13, "2207C139-FD68-4051-BE48-869114C5CAF5", 13, 1407173745, "890415", 1408403144, "890415", null, "1996", "Survey methods changed in 2012", "Male", "20.8", "19.5", "22.2", "3485" ]
+  , [ 14, "0D6FD1E9-F991-4DB2-AF81-125B01E97868", 14, 1407173745, "890415", 1408403131, "890415", null, "1997", "Survey methods changed in 2012", "Male", "21.1", "19.7", "22.4", "3544" ]
+  , [ 44, "C3C64A03-0188-478A-80B7-240DB1A56AAC", 44, 1407173745, "890415", 1408403139, "890415", null, "1997", "Survey methods changed in 2012", "Female", "13.9", "12.9", "14.9", "4734" ]
+  , [ 74, "35CD930F-B787-490F-A5CF-E6D5F6004DA8", 74, 1407173745, "890415", 1408403276, "890415", null, "1997", "Survey methods changed in 2012", "Total", "17.4", "16.6", "18.2", "8278" ]
+  , [ 75, "56FDCC37-EBE3-47A8-A876-AD43296DB5E9", 75, 1407173745, "890415", 1408403119, "890415", null, "1998", "Survey methods changed in 2012", "Total", "17.5", "16.6", "18.3", "8279" ]
+  , [ 45, "F7B675C0-2D3B-4BC2-828F-F2F00379AE59", 45, 1407173745, "890415", 1408403122, "890415", null, "1998", "Survey methods changed in 2012", "Female", "14.4", "13.4", "15.4", "4663" ]
+  , [ 15, "2280636E-B385-4F8B-9990-617137200F09", 15, 1407173745, "890415", 1408403126, "890415", null, "1998", "Survey methods changed in 2012", "Male", "20.6", "19.3", "22", "3616" ]
+  , [ 46, "54A7F70A-7FBD-4610-BF10-996F4F9BC7A5", 46, 1407173745, "890415", 1408403113, "890415", null, "1999", "Survey methods changed in 2012", "Female", "14.6", "13.6", "15.6", "4851" ]
+  , [ 76, "0F3A6ECA-8374-4E4A-853A-1941E57D0877", 76, 1407173745, "890415", 1408403116, "890415", null, "1999", "Survey methods changed in 2012", "Total", "17.1", "16.3", "17.9", "8489" ]
+  , [ 16, "3CFC7CD7-3D49-4AF1-9747-63E7F2B361B1", 16, 1407173745, "890415", 1408403029, "890415", null, "1999", "Survey methods changed in 2012", "Male", "19.7", "18.4", "21", "3638" ]
+  , [ 17, "A0C25385-7662-4000-8DF1-D4B9E09A7CC6", 17, 1407173745, "890415", 1408403026, "890415", null, "2000", "Survey methods changed in 2012", "Male", "18.7", "17.4", "20", "3505" ]
+  , [ 77, "FC4DC0C6-9D71-4D73-8908-973D5B29CF76", 77, 1407173745, "890415", 1408403023, "890415", null, "2000", "Survey methods changed in 2012", "Total", "16.3", "15.5", "17.1", "8234" ]
+  , [ 47, "A6950D49-1AD5-4BBD-9166-E29982288043", 47, 1407173745, "890415", 1408403020, "890415", null, "2000", "Survey methods changed in 2012", "Female", "13.9", "12.9", "14.9", "4729" ]
+  , [ 18, "4F167FA2-1399-4DA8-9BB6-F531A3DD3EA9", 18, 1407173745, "890415", 1408403017, "890415", null, "2001", "Survey methods changed in 2012", "Male", "20.2", "18.9", "21.6", "3462" ]
+  , [ 78, "D1F47B49-2CBE-4ED5-BEFE-91E4C9D2EFD2", 78, 1407173745, "890415", 1408403014, "890415", null, "2001", "Survey methods changed in 2012", "Total", "16.4", "15.6", "17.2", "8387" ]
+  , [ 48, "7C864929-E1A3-433D-9DAA-2DF3923268BA", 48, 1407173745, "890415", 1408403010, "890415", null, "2001", "Survey methods changed in 2012", "Female", "12.7", "11.7", "13.6", "4925" ]
+  , [ 19, "682F7A30-6E2E-4B3C-BAB9-F1D6EBD6CB9E", 19, 1407173745, "890415", 1408402998, "890415", null, "2002", "Survey methods changed in 2012", "Male", "18.8", "17.5", "20.1", "3530" ]
+  , [ 79, "A596E781-D152-424E-BF93-00601FDE081E", 79, 1407173745, "890415", 1408403007, "890415", null, "2002", "Survey methods changed in 2012", "Total", "15.8", "15", "16.6", "8593" ]
+  , [ 49, "6D9A4A63-65A7-4CA5-86D4-9A80467E9142", 49, 1407173745, "890415", 1408403001, "890415", null, "2002", "Survey methods changed in 2012", "Female", "12.8", "11.9", "13.8", "5063" ]
+  , [ 50, "24AFBB2B-E6C1-4AC2-92B1-530F4B57EBB1", 50, 1407173745, "890415", 1408402993, "890415", null, "2003", "Survey methods changed in 2012", "Female", "12.5", "11.6", "13.4", "5115" ]
+  , [ 80, "72074F87-ACDA-4C35-B8C3-98E1B01C5F00", 80, 1407173745, "890415", 1408402990, "890415", null, "2003", "Survey methods changed in 2012", "Total", "15.4", "14.7", "16.2", "8648" ]
+  , [ 20, "3B530A13-F3AA-46EA-B953-04600CB879A7", 20, 1407173745, "890415", 1408402995, "890415", null, "2003", "Survey methods changed in 2012", "Male", "18.4", "17.2", "19.7", "3533" ]
+  , [ 81, "E5C3AFDB-4871-4EC9-A6DD-9A5DF80006B6", 81, 1407173745, "890415", 1408402984, "890415", null, "2004", "Survey methods changed in 2012", "Total", "14.6", "13.8", "15.3", "8670" ]
+  , [ 21, "E14CBE9A-B736-4AAD-ADE3-570876FC2EFC", 21, 1407173745, "890415", 1408402978, "890415", null, "2004", "Survey methods changed in 2012", "Male", "18.2", "16.9", "19.5", "3495" ]
+  , [ 51, "595EDB26-3A2A-45DA-9F04-219C47037C5C", 51, 1407173745, "890415", 1408402981, "890415", null, "2004", "Survey methods changed in 2012", "Female", "11.1", "10.2", "11.9", "5175" ]
+  , [ 82, "42872D6F-F3BC-480D-A9BE-FD11E5E26C54", 82, 1407173745, "890415", 1408402968, "890415", null, "2005", "Survey methods changed in 2012", "Total", "14", "13.4", "14.7", "10668" ]
+  , [ 52, "BC43B9D0-231E-429F-8C2E-F24B449C621A", 52, 1407173745, "890415", 1408402975, "890415", null, "2005", "Survey methods changed in 2012", "Female", "11.1", "10.3", "16.3", "6430" ]
+  , [ 22, "0844B9EE-4C0D-4598-B47F-F1AB11209413", 22, 1407173745, "890415", 1408402971, "890415", null, "2005", "Survey methods changed in 2012", "Male", "17", "15.9", "18.2", "4238" ]
+  , [ 23, "44A6975C-F6B0-4467-97C4-568D119591FD", 23, 1407173745, "890415", 1408402962, "890415", null, "2006", "Survey methods changed in 2012", "Male", "17.5", "16.4", "18.7", "4135" ]
+  , [ 53, "0A9C1526-F119-469E-8177-2101E2691928", 53, 1407173745, "890415", 1408402966, "890415", null, "2006", "Survey methods changed in 2012", "Female", "9.1", "8.4", "9.8", "6181" ]
+  , [ 83, "396AF8BB-268A-4F67-B848-BA174D49DC08", 83, 1407173745, "890415", 1408402960, "890415", null, "2006", "Survey methods changed in 2012", "Total", "13.3", "12.6", "13.9", "10316" ]
+  , [ 24, "C28024B7-31E4-41F8-90AE-EED3164DDFA8", 24, 1407173745, "890415", 1408402957, "890415", null, "2007", "Survey methods changed in 2012", "Male", "17.1", "16", "18.1", "4906" ]
+  , [ 54, "C2ACFA54-E18E-47B4-AD11-73D4DF9EEF93", 54, 1407173745, "890415", 1408402955, "890415", null, "2007", "Survey methods changed in 2012", "Female", "10.7", "10", "11.4", "7699" ]
+  , [ 84, "ACFF5A71-FB80-491A-9CAA-7AE9A749FF1E", 84, 1407173745, "890415", 1408402949, "890415", null, "2007", "Survey methods changed in 2012", "Total", "13.8", "13.2", "14.4", "12605" ]
+  , [ 85, "557B0E1F-DC9F-45CA-9A10-31C1325B3A4B", 85, 1407173745, "890415", 1408402946, "890415", null, "2008", "Survey methods changed in 2012", "Total", "13.3", "12.8", "13.8", "17034" ]
+  , [ 55, "C44449EF-FC2A-4383-BD86-A3ECC64F9258", 55, 1407173745, "890415", 1408402937, "890415", null, "2008", "Survey methods changed in 2012", "Female", "10.6", "10", "11.2", "10366" ]
+  , [ 25, "2DDC34A2-D22F-4162-8627-B0F0F8417EA5", 25, 1407173745, "890415", 1408402933, "890415", null, "2008", "Survey methods changed in 2012", "Male", "16.5", "15.6", "17.4", "4906" ]
+  , [ 56, "70EA0772-0D0D-4FA1-AE9F-04B7490B631B", 56, 1407173745, "890415", 1408402930, "890415", null, "2009", "Survey methods changed in 2012", "Female", "10.5", "9.9", "11.1", "9903" ]
+  , [ 26, "BBF1493F-7DF5-4E19-B23F-592FD0AE2725", 26, 1407173745, "890415", 1408402927, "890415", null, "2009", "Survey methods changed in 2012", "Male", "15.8", "14.9", "16.7", "6569" ]
+  , [ 86, "496A8C5C-2B99-480E-886C-E40953FE9C19", 86, 1407173745, "890415", 1408402924, "890415", null, "2009", "Survey methods changed in 2012", "Total", "13.1", "12.6", "13.6", "16472" ]
+  , [ 87, "D6C6CD2D-728F-4ABF-9ABF-BBFBEB126BC7", 87, 1407173745, "890415", 1408402921, "890415", null, "2010", "Survey methods changed in 2012", "Total", "11.9", "11.6", "12.6", "17023" ]
+  , [ 57, "5616AB28-C17D-4948-BCC6-91CC611513BF", 57, 1407173745, "890415", 1408402917, "890415", null, "2010", "Survey methods changed in 2012", "Female", "9.6", "9", "10.1", "10338" ]
+  , [ 27, "9EBDF4E9-5FA9-47D2-BDC0-50CE1F23AACC", 27, 1407173745, "890415", 1408402913, "890415", null, "2010", "Survey methods changed in 2012", "Male", "14.7", "13.8", "15.5", "6685" ]
+  , [ 28, "6C706538-6B6C-4AAF-B135-10591C68021E", 28, 1407173745, "890415", 1408402910, "890415", null, "2011", "Survey methods changed in 2012", "Male", "14.9", "14", "15.7", "6813" ]
+  , [ 58, "1203A51E-EBAD-4E90-B961-98E8D226C3CC", 58, 1407173745, "890415", 1408402905, "890415", null, "2011", "Survey methods changed in 2012", "Female", "9.3", "8.7", "9.8", "10673" ]
+  , [ 88, "77A35B08-9FD0-418D-BF12-238E85AC77B8", 88, 1407173745, "890415", 1408402902, "890415", null, "2011", "Survey methods changed in 2012", "Total", "12", "11.5", "12.5", "17486" ]
+  , [ 59, "F03D81A8-6CE2-4510-B26E-89E44C3B3489", 59, 1407173745, "890415", 1408402873, "890415", null, "2012", "New survey methods", "Female", "10", "9.4", "10.7", "8140" ]
+  , [ 29, "F238D238-2595-43C3-BC58-EF562368A23F", 29, 1407173745, "890415", 1408402866, "890415", null, "2012", "New survey methods", "Male", "15.5", "14.6", "16.4", "5884" ]
+  , [ 89, "D71921A6-EA03-4607-8423-AF1AC43465EA", 89, 1407173745, "890415", 1408402859, "890415", null, "2012", "New survey methods", "Total", "12.7", "12.2", "13.3", "14024" ]
+  , [ 60, "AFEC9981-0CBC-4DEF-A0B8-7CE4E617BABB", 60, 1407173745, "890415", 1408402856, "890415", null, "2013", "New survey methods", "Female", "8.5", "7.7", "9.2", "5842" ]
+  , [ 90, "88986051-F287-4B2E-A26D-DE6FE893E91F", 90, 1407173745, "890415", 1408402850, "890415", null, "2013", "New survey methods", "Total", "11.7", "11.1", "12.4", "10206" ]
+  , [ 30, "1A63578F-F930-48D1-AC46-DA247F2F2C74", 30, 1407173745, "890415", 1408402846, "890415", null, "2013", "New survey methods", "Male", "15.1", "14.1", "16.2", "4364" ]
+  ]
+}
