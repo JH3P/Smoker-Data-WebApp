@@ -15,7 +15,9 @@ public class SmokerDataServiceTest{
     public void testGetData(){
         SmokerDataService dataService = new SmokerDataService();
         JSONArray jsonArray = dataService.getJsonData();
+        JSONArray headerArr = dataService.getJsonHeaders();
         Assert.assertFalse(jsonArray.isEmpty());
+        Assert.assertNotNull(headerArr);
     }
 
 }
