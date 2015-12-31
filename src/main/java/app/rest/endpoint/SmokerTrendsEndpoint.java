@@ -3,6 +3,7 @@ package app.rest.endpoint;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 import javax.xml.ws.Response;
 
 /**
@@ -11,10 +12,8 @@ import javax.xml.ws.Response;
 @Path("/smokerTrends")
 public class SmokerTrendsEndpoint {
     @GET
-    @Path("/{name}")
-    public Response helloWorld(@PathParam("name") String name) {
-        String response = "Hello world! My name is " + name;
-
-        return null;
+    @Produces("text/plain")
+    public String getIt() {
+        return "Got it!";
     }
 }
