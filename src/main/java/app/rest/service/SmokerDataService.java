@@ -1,12 +1,14 @@
 package app.rest.service;
 
+import org.apache.commons.io.IOUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+
+
+
+import java.io.*;
 import java.net.URL;
 
 /**
@@ -14,15 +16,14 @@ import java.net.URL;
  * Created by JHP on 12/22/15.
  */
 public class SmokerDataService implements ISmokerDataService {
-    private static final String jsonFilePath = "/smoker-data.json";
-
+    InputStream in = getClass().getResourceAsStream("/smoker-data.json");
 
     public JSONArray getJsonHeaders() {
         try{
-            final URL jsonURL = this.getClass().getResource(jsonFilePath);
-            FileReader reader = new FileReader(jsonURL.getFile());
+            String jsonTxt = IOUtils.toString(in);
             JSONParser jsonParser = new JSONParser();
-            JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
+            System.out.println(jsonTxt);
+            JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonTxt);
             return (JSONArray)((JSONObject)((JSONObject) jsonObject.get("meta")).get("view")).get("columns");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -36,10 +37,9 @@ public class SmokerDataService implements ISmokerDataService {
 
     public JSONArray getJsonData() {
         try{
-            final URL jsonURL = this.getClass().getResource(jsonFilePath);
-            FileReader reader = new FileReader(jsonURL.getFile());
+            String jsonTxt = IOUtils.toString(in);
             JSONParser jsonParser = new JSONParser();
-            JSONObject jsonObject = (JSONObject) jsonParser.parse(reader);
+            JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonTxt.toString());
             return (JSONArray) jsonObject.get("data");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
