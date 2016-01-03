@@ -10,6 +10,8 @@ import org.eclipse.jetty.server.handler.HandlerList;
 import org.eclipse.jetty.server.handler.ResourceHandler;
 import org.eclipse.jetty.webapp.WebAppContext;
 
+import java.io.InputStream;
+
 public class Application {
         public static void main(String[] args) throws Exception {
 
@@ -17,15 +19,15 @@ public class Application {
 
             final WebAppContext context = new WebAppContext();
             context.setContextPath("/");
-            context.setResourceBase("/Users/JHP/Development/IdeaProjects/Smoker-Data-WebApp/src/main/webapp");
-            context.setDescriptor("/Users/JHP/Development/IdeaProjects/Smoker-Data-WebApp/src/main/webapp/WEB-INF/web.xml");
+            context.setResourceBase("src/main/webapp");
+            context.setDescriptor("src/main/webapp/WEB-INF/web.xml");
             context.setParentLoaderPriority(true);
             context.setServer(server);
 
             ResourceHandler resource_handler = new ResourceHandler();
             resource_handler.setDirectoriesListed(false);
             resource_handler.setWelcomeFiles(new String[]{ "index.html" });
-            resource_handler.setResourceBase("/Users/JHP/Development/IdeaProjects/Smoker-Data-WebApp/src/main/webapp");
+            resource_handler.setResourceBase("src/main/webapp");
 
 
             HandlerList handlers = new HandlerList();
