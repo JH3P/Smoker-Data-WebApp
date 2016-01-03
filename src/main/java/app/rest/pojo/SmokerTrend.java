@@ -1,5 +1,7 @@
 package app.rest.pojo;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 /**
  * Created by JHP on 12/22/15.
  */

@@ -46,4 +46,45 @@ public class SmokerTrendDao implements ISmokerTrendDao {
         }
         return data;
     }
+
+    public List<SmokerTrend> getSmokerDataByGender() {
+        JSONArray dataArr = service.getJsonData();
+        ArrayList<SmokerTrend> data = new ArrayList<SmokerTrend>();
+        for (int i = 0; i < dataArr.size(); i++){
+            JSONArray line = (JSONArray) dataArr.get(i);
+            if (!line.get(HeaderName.Gender.value).toString().equals("Total")) {
+                SmokerTrend dataObj = new SmokerTrend(line.get(HeaderName.Gender.value).toString(), Integer.parseInt(line.get(HeaderName.Year.value).toString()),
+                        Double.parseDouble(line.get(HeaderName.Percentage.value).toString()), Integer.parseInt(line.get(HeaderName.Respondents.value).toString()));
+                data.add(dataObj);
+            }
+        }
+        return data;
+    }
+
+    public List<SmokerTrend> getTotalSmokerData() {
+        JSONArray dataArr = service.getJsonData();
+        ArrayList<SmokerTrend> data = new ArrayList<SmokerTrend>();
+        for (int i = 0; i < dataArr.size(); i++){
+            JSONArray line = (JSONArray) dataArr.get(i);
+            if (line.get(HeaderName.Gender.value).toString().equals("Total")) {
+                SmokerTrend dataObj = new SmokerTrend(line.get(HeaderName.Gender.value).toString(), Integer.parseInt(line.get(HeaderName.Year.value).toString()),
+                        Double.parseDouble(line.get(HeaderName.Percentage.value).toString()), Integer.parseInt(line.get(HeaderName.Respondents.value).toString()));
+                data.add(dataObj);
+            }
+        }
+        return data;
+    }
+
+    public List<String> getAllYears() {
+        JSONArray dataArr = service.getJsonData();
+        ArrayList<String> data = new ArrayList<String>();
+        for (int i = 0; i < dataArr.size(); i++){
+            JSONArray line = (JSONArray) dataArr.get(i);
+            if(!data.contains(line.get(HeaderName.Year.value).toString())){
+                data.add(line.get(HeaderName.Year.value).toString());
+            }
+        }
+        return data;
+    }
 }
+

@@ -1,4 +1,7 @@
-//Update
+READ ME:
 
-Notes to self:  in intellij - Project Structure -> add SDK -> Java jdk.
+In order to run this application, please find the SmokerDataApplication.jar file in the target folder.
 
+Simply use 'java -jar SmokerDataApplication.jar' to run, and then CTRL (or Command) + C to end the application.
+
+This application is a simple example of taking a JSON file as the backend and serving up data with a REST web service using the Jersey framework.
