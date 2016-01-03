@@ -1,11 +1,12 @@
-READ ME:
 
-In order to run this application, please find the SmokerDataApplication.jar file in the target folder.
+This application graphically visualizes smoker trend data.
 
-Simply use 'java -jar SmokerDataApplication.jar' to run, and then CTRL (or Command) + C to end the application.
+To build this project, run 'mvn package' then find the SmokerDataApplication.jar file in the target folder.
+
+Simply use 'java -jar SmokerDataApplication.jar' to run, and then CTRL (or Command) + C to stop the application.
 
 This application is a simple example of taking a JSON file as the backend and serving up data with a 
-REST web service using the Jersey framework.
+REST web service using the Jersey framework, and an embedded Jetty server.
 
 The front end was built using the following libraries:
 -AngularJS
@@ -13,4 +14,4 @@ The front end was built using the following libraries:
 -Angular-NVD3 (D3, NVD3)
 -Angular-Resource 
 
-This application graphically visualizes smoker trend data.
+
