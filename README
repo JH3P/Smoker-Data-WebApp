@@ -3,9 +3,10 @@ This application graphically visualizes smoker trend data.
 
 To build this project, run 'mvn package' then find the SmokerDataApplication.jar file in the target folder.
 
-If you do not wish to build, the jar file can be found at the root folder of this project.
+Please keep the jar file inside of the target folder as it uses an embedded Jetty server to 
+find the necessary files in the exploded WAR.
 
-Simply use 'java -jar SmokerDataApplication.jar' to run, and then CTRL (or Command) + C to stop the application.
+Use 'java -jar SmokerDataApplication.jar' to run, and then CTRL (or Command) + C to stop the application.
 
 This application is a simple example of taking a JSON file as the backend and serving up data with a 
 REST web service using the Jersey framework, and an embedded Jetty server.
