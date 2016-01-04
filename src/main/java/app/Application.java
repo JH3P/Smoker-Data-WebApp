@@ -14,39 +14,26 @@ import java.io.InputStream;
 
 public class Application {
         public static void main(String[] args) throws Exception {
-
             final Server server = new Server(8080);
 
             final WebAppContext context = new WebAppContext();
             context.setContextPath("/");
-            context.setResourceBase("src/main/webapp");
-            context.setDescriptor("src/main/webapp/WEB-INF/web.xml");
+            context.setResourceBase("classes");
+            context.setDescriptor("classes/WEB-INF/web.xml");
             context.setParentLoaderPriority(true);
             context.setServer(server);
-
             ResourceHandler resource_handler = new ResourceHandler();
             resource_handler.setDirectoriesListed(false);
             resource_handler.setWelcomeFiles(new String[]{ "index.html" });
-            resource_handler.setResourceBase("src/main/webapp");
+            resource_handler.setResourceBase("classes");
 
 
             HandlerList handlers = new HandlerList();
             handlers.setHandlers(new Handler[] { resource_handler, context });
             server.setHandler(handlers);
 
-                server.start();
-                server.join();
-
-            /*
-            Server server = new Server(8080);
-
-            WebAppContext webapp = new WebAppContext();
-            webapp.setContextPath("/");
-            webapp.setWar("/Users/JHP/Development/IdeaProjects/Smoker-Data-WebApp/target/SmokerDataApplication.war");
-            server.setHandler(webapp);
-
             server.start();
             server.join();
-            */
         }
+
     }
