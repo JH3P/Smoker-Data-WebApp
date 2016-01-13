@@ -57,4 +57,12 @@ public class SmokerTrendDaoTest {
             Assert.assertNotEquals(s.getGender(),"Total");
         }
     }
+    @Test
+    public void getDefinitionHeadersTest(){
+        final List<String> defHeaders = dataDao.getAllDefinitions();
+        Assert.assertNotNull(defHeaders);
+        for (String s: defHeaders){
+            System.out.println(s);
+        }
+    }
 }

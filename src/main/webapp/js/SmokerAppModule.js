@@ -1,20 +1,69 @@
 angular.module('smokerApp',['ngResource','nvd3'])
-    .factory('AllDataService',function($resource, $q){
-        return $resource('/smokerTrends/all');
+    .factory('DataService',function($resource){
+        return {
+            All: $resource('/smokerTrends/all'),
+            Total:  $resource('/smokerTrends/total'),
+            Genders: $resource('/smokerTrends/genders')
+        };
     })
-    .factory('TotalDataService', function($resource){
-        return $resource('/smokerTrends/total');
-    })
-    .factory('GenderDataService',function($resource){
-        return $resource('/smokerTrends/genders');
-    })
-    .factory('YearService', function($resource){
-        return $resource('/smokerTrends/allYears')
+    .factory('DataHeadersService',function($resource){
+        return {
+            Genders: ["All","Male","Female"],
+            Definitions:  $resource('/headers/allDefinitions'),
+            Years:  $resource('/headers/allYears')
+        };
     })
     .controller('AppController',['$scope', function($scope) {
-        $scope.allData = TotalDataService.get();
     }])
-    .controller('BarGraphCtrl',['$scope', 'TotalDataService', function($scope, TotalDataService) {
+    .controller('BarGraphCtrl',['$scope', 'DataService','DataHeadersService','$filter', function($scope, DataService,DataHeadersService, $filter) {
+        DataService.All.get(function(data){
+            var allData = $filter('optionsFilter')(data.values, "Total");
+            $scope.data = [allData];
+            getLeastYr();
+        });
+
+
+        $scope.genders= DataHeadersService.Genders;
+        DataHeadersService.Definitions.get(function(data){
+            $scope.definitions = data.values;
+        });
+        $scope.optionsChange = function() {
+            if ($scope.selected_gender === "All") {
+                DataService.All.get(function(data){
+                    var allData = $filter('optionsFilter')(data.values, "Total", $scope.selected_definition);
+                    $scope.data = [allData];
+                    getLeastYr();
+                });
+            } else {
+                DataService.All.get(function(data){
+                    var genderData = $filter('optionsFilter')(data.values, $scope.selected_gender, $scope.selected_definition);
+                    $scope.data = [genderData];
+                    getLeastYr();
+                });
+            }
+        };
+        function getLeastYr(){
+            switch($scope.selected_definition) {
+                case "Definition of smoker expanded in 1996":
+                    $scope.least_yr ="1984";
+                    $scope.greatest_yr="1995";
+                    break;
+                case "Survey methods changed in 2012":
+                    $scope.least_yr ="1996";
+                    $scope.greatest_yr="2011";
+                    break;
+                case "New survey methods":
+                    $scope.least_yr ="2012";
+                    $scope.greatest_yr="2013";
+                    break;
+                default:
+                    $scope.least_yr="1984";
+                    $scope.greatest_yr="2013";
+            }
+        }
+        function getGreatestYr(){
+
+        }
         $scope.options = {
             chart: {
                 type: 'discreteBarChart',
@@ -44,22 +93,18 @@ angular.module('smokerApp',['ngResource','nvd3'])
                 }
             }
         };
-        TotalDataService.get(function(data){
-            $scope.data = [data];
-        });
     }])
-    .controller('PieChartCtrl',['$scope', 'GenderDataService','YearService', '$filter',function($scope, GenderDataService, YearService, $filter) {
-        YearService.get(function(data){
+    .controller('PieChartCtrl',['$scope', 'DataHeadersService','DataService', '$filter',function($scope, DataHeadersService,DataService, $filter) {
+        DataHeadersService.Years.get(function(data){
             $scope.years = data.values;
         });
-        GenderDataService.get(function(data){
+        DataService.Genders.get(function(data){
             $scope.genData = data.values;
         });
 
         $scope.selected_item = "";
         $scope.selectedItemChanged = function(){
-            var found = $filter('getByYear')($scope.genData, $scope.selected_item);
-            $scope.data = found;
+            $scope.data = $filter('getByYear')($scope.genData, $scope.selected_item);
         };
 
         $scope.options = {
@@ -84,23 +129,40 @@ angular.module('smokerApp',['ngResource','nvd3'])
         };
     }])
     .filter('getByYear', function() {
-    return function(input, id) {
-        var i=0, len=input.length, matchArr=[],totNumResp=0, maleNum,femaleNum;
-        for (; i<len; i++) {
-            if (+input[i].year == +id && input[i].gender==="Male") {
-                totNumResp += +input[i].numRespondents;
-                maleNum = getGenderTotal(input[i].percentage,input[i].numRespondents);
-            }else if(+input[i].year == +id && input[i].gender =="Female"){
-                totNumResp+= +input[i].numRespondents;
-                femaleNum = getGenderTotal(input[i].percentage,input[i].numRespondents);
+        return function(input, id) {
+            var i=0, len=input.length, matchArr=[],totNumResp=0, maleNum,femaleNum;
+            for (; i<len; i++) {
+                if (+input[i].year == +id && input[i].gender==="Male") {
+                    totNumResp += +input[i].numRespondents;
+                    maleNum = getGenderTotal(input[i].percentage,input[i].numRespondents);
+                }else if(+input[i].year == +id && input[i].gender =="Female"){
+                    totNumResp+= +input[i].numRespondents;
+                    femaleNum = getGenderTotal(input[i].percentage,input[i].numRespondents);
+                }
             }
-        }
-        matchArr.push({"gender": "Female", "percentage": (femaleNum/totNumResp) * 100});
-        matchArr.push({"gender": "Male", "percentage": (maleNum/totNumResp) * 100});
-        matchArr.push({"gender": "Non-Smoker", "percentage": ((totNumResp-(femaleNum+maleNum))/totNumResp) * 100});
-        return matchArr;
+            matchArr.push({"gender": "Female", "percentage": (femaleNum/totNumResp) * 100});
+            matchArr.push({"gender": "Male", "percentage": (maleNum/totNumResp) * 100});
+            matchArr.push({"gender": "Non-Smoker", "percentage": ((totNumResp-(femaleNum+maleNum))/totNumResp) * 100});
+            return matchArr;
     };
        function getGenderTotal(percentage, total){
           return (percentage/100) * total;
-       };
-});
+       }
+    })
+    .filter('optionsFilter', function(){
+        return function(input, gender, defn){
+            var i= 0,len=input.length, matchArr = {values:[]};
+            for(;i<len;i++){
+                if(defn) {
+                    if (input[i].gender === gender && input[i].definition === defn) {
+                        matchArr.values.push(input[i]);
+                    }
+                }else{
+                    if (input[i].gender === gender) {
+                        matchArr.values.push(input[i]);
+                    }
+                }
+            }
+            return matchArr;
+        };
+    });

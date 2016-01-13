@@ -20,13 +20,15 @@ public class Application {
             context.setContextPath("/");
             context.setResourceBase("classes");
             context.setDescriptor("classes/WEB-INF/web.xml");
+//            context.setResourceBase("src/main/webapp/");
+//            context.setDescriptor("src/main/webapp/WEB-INF/web.xml");
             context.setParentLoaderPriority(true);
             context.setServer(server);
             ResourceHandler resource_handler = new ResourceHandler();
             resource_handler.setDirectoriesListed(false);
             resource_handler.setWelcomeFiles(new String[]{ "index.html" });
             resource_handler.setResourceBase("classes");
-
+//            resource_handler.setResourceBase("src/main/webapp/");
 
             HandlerList handlers = new HandlerList();
             handlers.setHandlers(new Handler[] { resource_handler, context });

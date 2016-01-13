@@ -13,4 +13,5 @@ public interface ISmokerTrendDao {
     public List<SmokerTrend> getSmokerDataByGender();
     public List<SmokerTrend> getTotalSmokerData();
     public List<String> getAllYears();
+    public List<String> getAllDefinitions();
 }
