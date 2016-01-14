@@ -11,12 +11,14 @@ public class SmokerTrend {
     private int year;
     private double percentage;
     private int numRespondents;
+    private String definition;
 
-    public SmokerTrend(String gender, int year, double percentage, int numRespondents){
+    public SmokerTrend(String gender, int year, double percentage, int numRespondents, String definition){
         this.gender = gender;
         this.year = year;
         this.percentage = percentage;
         this.numRespondents = numRespondents;
+        this.definition = definition;
     }
 
     public String getGender() {
@@ -50,4 +52,13 @@ public class SmokerTrend {
     public void setNumRespondents(int numRespondents) {
         this.numRespondents = numRespondents;
     }
+
+    public String getDefinition() {
+        return definition;
+    }
+
+    public void setDefinition(String definition) {
+        this.definition = definition;
+    }
+
 }

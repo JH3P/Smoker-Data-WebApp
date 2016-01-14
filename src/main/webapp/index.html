@@ -22,14 +22,20 @@
             <div class="container-fluid">
                 <div class="row-fluid">
                     <div ng-controller="BarGraphCtrl" class="col-lg-12 graph">
-                        <h3>Prevalence of Smokers from 1984 to 2013</h3>
+                        <h3>Prevalence of {{selected_gender+" "}}Smokers from {{least_yr}} to {{greatest_yr}}</h3>
+                        <select ng-init="selected_gender = genders[0]" ng-model="selected_gender" ng-options="gender as (gender) for gender in genders" ng-change="optionsChange()">
+                        </select>
+                        <select ng-model="selected_definition" ng-options="def as (def) for def in definitions" ng-change="optionsChange()">
+                            <option value="">Select Definition</option>
+                        </select>
                         <nvd3 options="options" data="data"></nvd3>
                     </div>
                 </div>
                 <div class="row-fluid">
                     <div ng-controller="PieChartCtrl" class="col-lg-12 graph">
-                        <h3>Percentages of Female and Male Smokers by Year</h3>
-                        <select ng-model="selected_item" ng-options="year as (year) for year in years" ng-change="selectedItemChanged()">
+                        <h3>Percentages of Female and Male Smokers<span ng-if="selected_item"> in {{selected_item}}</span><span ng-if="!selected_item"> by Year</span></h3>
+
+                        <select ng-model="selected_item" ng-options="year as (year) for year in years">
                             <option value="">Select Year</option>
                         </select>
                         <nvd3 options="options" data="data"></nvd3>

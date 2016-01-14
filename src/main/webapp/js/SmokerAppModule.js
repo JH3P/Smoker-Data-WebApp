@@ -13,15 +13,29 @@ angular.module('smokerApp',['ngResource','nvd3'])
             Years:  $resource('/headers/allYears')
         };
     })
-    .controller('AppController',['$scope', function($scope) {
-    }])
-    .controller('BarGraphCtrl',['$scope', 'DataService','DataHeadersService','$filter', function($scope, DataService,DataHeadersService, $filter) {
+    .factory('selectionService', function ($rootScope) {
+        var year = "";
+
+        function setSelectionYr(value) {
+            year = value;
+            $rootScope.$apply();
+        }
+
+        function getSelectionYr() {
+            return year;
+        }
+
+        return {
+            setSelectionYr: setSelectionYr,
+            getSelectionYr: getSelectionYr
+        };
+    })
+    .controller('BarGraphCtrl',['$scope', 'DataService','DataHeadersService','$filter','selectionService', function($scope, DataService,DataHeadersService, $filter, selectionService) {
         DataService.All.get(function(data){
             var allData = $filter('optionsFilter')(data.values, "Total");
             $scope.data = [allData];
             getLeastYr();
         });
-
 
         $scope.genders= DataHeadersService.Genders;
         DataHeadersService.Definitions.get(function(data){
@@ -61,9 +75,6 @@ angular.module('smokerApp',['ngResource','nvd3'])
                     $scope.greatest_yr="2013";
             }
         }
-        function getGreatestYr(){
-
-        }
         $scope.options = {
             chart: {
                 type: 'discreteBarChart',
@@ -90,11 +101,19 @@ angular.module('smokerApp',['ngResource','nvd3'])
                 },
                 yAxis: {
                     axisLabel: 'Percentage of Smokers'
+                },
+                discretebar: {
+                    dispatch: {
+                        elementClick: function(e){
+                            selectionService.setSelectionYr(e.data.year);
+                        }
+                    }
                 }
             }
         };
+
     }])
-    .controller('PieChartCtrl',['$scope', 'DataHeadersService','DataService', '$filter',function($scope, DataHeadersService,DataService, $filter) {
+    .controller('PieChartCtrl',['$scope', 'DataHeadersService','DataService', '$filter','selectionService',function($scope, DataHeadersService, DataService, $filter, selectionService) {
         DataHeadersService.Years.get(function(data){
             $scope.years = data.values;
         });
@@ -102,10 +121,16 @@ angular.module('smokerApp',['ngResource','nvd3'])
             $scope.genData = data.values;
         });
 
-        $scope.selected_item = "";
-        $scope.selectedItemChanged = function(){
-            $scope.data = $filter('getByYear')($scope.genData, $scope.selected_item);
-        };
+        $scope.selService = selectionService;
+        $scope.$watch('selService.getSelectionYr()',function(newVal){
+            $scope.selected_item = newVal;
+        });
+
+        $scope.$watch('selected_item',function() {
+            if ($scope.selected_item) {
+                $scope.data = $filter('getByYear')($scope.genData, $scope.selected_item);
+            }
+        });
 
         $scope.options = {
             chart: {

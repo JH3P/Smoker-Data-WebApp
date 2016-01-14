@@ -48,18 +48,8 @@ public class SmokerTrendsEndpoint {
     @Produces({ MediaType.APPLICATION_JSON})
     public SmokerDataObject getAllData() {
         smokerDao = new SmokerTrendDao();
-        SmokerDataObject result =  new SmokerDataObject();
+        SmokerDataObject result = new SmokerDataObject();
         result.setValues(smokerDao.getAllSmokerData());
-        return result;
-    }
-    //Get the years
-    @Path("/allYears")
-    @GET
-    @Produces({ MediaType.APPLICATION_JSON})
-    public SmokerHeaderObject getYears() {
-        smokerDao = new SmokerTrendDao();
-        SmokerHeaderObject result =  new SmokerHeaderObject();
-        result.setValues(smokerDao.getAllYears());
         return result;
     }
 
